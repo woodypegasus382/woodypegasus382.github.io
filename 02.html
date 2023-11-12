@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh_tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>woodypegasus_tw 的個人網站</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: '微軟正黑體', sans-serif;
+            overflow-x: hidden;
+            background-image: url(./background.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #000000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+
+        #navbar {
+            background-image: url(./img/pic01.jpg);
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-radius: 0 0 10px 10px;
+        }
+
+        #navbar h1 {
+            color: #fff;
+            margin: 0;
+        }
+
+        #main-content {
+            text-align: center;
+            color: #fff;
+        }
+
+        #back-btn {
+            position: fixed;
+            bottom: 70px;
+            right: 20px;
+        }
+
+        #back-btn a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #back-btn a:hover {
+            background-color: #45a049;
+        }
+
+        #copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+        }
+
+        #copyright p {
+        margin: 0;
+        padding: 10px;
+        } 
+
+
+        #discord-link {
+            color: #blue ;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #main-content {
+                padding: 80px;
+            }
+
+            #home-2 {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+    <div id="navbar">
+        <h1>woodypegasus_tw 的個人網站</h1>
+    </div>
+
+    <div id="main-content">
+        <h1>關於我</h1>
+        <h2>我是喜歡接觸電腦程式等的國二生</h2>
+        <h2>可以找到任何東西(?</h2>
+        <p>基本上24h在線</p>
+        <p>除非我死了或我電腦 手機被收w</p>
+    </div>
+
+    <div id="back-btn">
+        <a href="./index.html">返回</a>
+    </div>
+
+    <div id="copyright">
+        <p>©!夜間部製作 | <a href="https://discord.gg/Qhyv626EXf" id="discord-link" target="_blank">Discord</a></p>
+    </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
